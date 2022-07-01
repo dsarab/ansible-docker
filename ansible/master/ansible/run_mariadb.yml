@@ -1,0 +1,5 @@
+---
+- hosts: web
+  tasks:
+    - name: run service mariadb
+      command: ../etc/init.d/apache2 start

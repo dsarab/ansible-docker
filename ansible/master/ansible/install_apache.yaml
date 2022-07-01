@@ -1,0 +1,8 @@
+---
+- hosts: web
+  tasks:
+    - name: Install apache on db host
+      apt:
+        name: apache2
+        state: latest
+

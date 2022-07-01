@@ -1,0 +1,7 @@
+---
+- hosts: db
+  tasks:
+    - name: Install Mariadb on db host
+      apt:
+        name: mariadb-server
+        state: latest

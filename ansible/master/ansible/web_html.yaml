@@ -1,0 +1,10 @@
+---
+- hosts: web
+  tasks:
+  - name: move a html to the web
+    template:
+      src: hello_world.html
+      dest: /var/www/html/index.html
+      owner: www-data
+      group: www-data
+      mode: '0644'
